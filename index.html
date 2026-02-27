@@ -3,75 +3,98 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>OpenClaw 秘書專用：Telegram 智能助理操作手冊</title>
+    <title>OpenClaw 入門：Telegram 智能助理操作手冊</title>
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px; }
-        h1 { color: #0088cc; border-bottom: 2px solid #0088cc; padding-bottom: 10px; }
-        h2 { color: #2c3e50; margin-top: 30px; border-left: 5px solid #0088cc; padding-left: 15px; }
-        .telegram-bubble { background: #e1f5fe; padding: 15px; border-radius: 15px; margin: 10px 0; border: 1px solid #b3e5fc; }
-        .bot-bubble { background: #f1f8e9; padding: 15px; border-radius: 15px; margin: 10px 0; border: 1px solid #dcedc8; }
-        .warning { background: #fff3e0; padding: 15px; border-radius: 8px; border-left: 5px solid #ff9800; color: #e65100; }
-        .step-box { background: #fafafa; padding: 20px; border-radius: 8px; border: 1px solid #eee; margin: 20px 0; }
-        .footer { margin-top: 50px; font-size: 0.8em; color: #999; text-align: center; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.8; color: #333; max-width: 850px; margin: 0 auto; padding: 40px; background-color: #fdfdfd; }
+        h1 { color: #0088cc; border-bottom: 3px solid #0088cc; padding-bottom: 15px; text-align: center; }
+        h2 { color: #2c3e50; margin-top: 40px; border-left: 6px solid #0088cc; padding-left: 15px; background: #f0f7fa; padding-top: 10px; padding-bottom: 10px; }
+        .telegram-bubble { background: #e1f5fe; padding: 15px; border-radius: 18px 18px 18px 2px; margin: 15px 0; border: 1px solid #b3e5fc; max-width: 80%; }
+        .bot-bubble { background: #f1f8e9; padding: 15px; border-radius: 18px 18px 2px 18px; margin: 15px 0; border: 1px solid #dcedc8; max-width: 80%; margin-left: auto; text-align: left; }
+        .quote { background: #fffde7; padding: 20px; border-radius: 10px; border-left: 5px solid #fbc02d; font-style: italic; margin: 20px 0; }
+        .step-box { background: #ffffff; padding: 25px; border-radius: 12px; border: 1px solid #e0e0e0; margin: 25px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .qna-item { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; }
+        .question { font-weight: bold; color: #d32f2f; font-size: 1.1em; margin-bottom: 8px; display: block; }
+        .answer { color: #2e7d32; }
+        .learning-note { background: #f3e5f5; padding: 15px; border-radius: 8px; border-left: 5px solid #9c27b0; color: #4a148c; margin: 20px 0; }
+        .footer { margin-top: 60px; font-size: 0.9em; color: #aaa; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
     <h1>OpenClaw 秘書專用手冊</h1>
-    <p><strong>主題：</strong> 透過 Telegram 輕鬆駕馭你的 AI 助理（龍蝦）</p>
+    <p style="text-align: center; color: #666;"><strong>「像和同事傾偈一樣，簡單駕馭你的 AI 助理」</strong></p>
 
-    <div class="step-box">
-        <p>歡迎！呢份手冊係專門為秘書同事而設。你唔需要識任何程式碼，亦唔需要入後台。你只需要好似平時同朋友傾偈咁，喺 Telegram 吩咐「龍蝦」就得。</p>
+    <div class="learning-note">
+        <strong>💡 給使用者的話：</strong><br>
+        OpenClaw（龍蝦）唔係一個死板嘅程式，而係一個會跟住你一齊進步嘅夥伴。你同佢溝通得愈多，佢就愈識得配合你嘅工作節奏。呢個係一個有趣的「共同學習」過程。
     </div>
 
-    <h2>第一章：點樣開始同「龍蝦」傾偈？</h2>
-    <p>龍蝦就係你 Telegram 入面嘅其中一個聯絡人。佢會喺唔同嘅群組幫你手：</p>
-    <ul>
-        <li><strong>個人對話：</strong> 你同龍蝦嘅私密空間，用嚟做最後確認同埋聽取聽日嘅行程預報。</li>
-        <li><strong>工作群組 (例如 行政/財務群組)：</strong> 龍蝦會喺度睇住啲行政 Deadline。</li>
-        <li><strong>記事群組 (例如 記事簿)：</strong> 你射任何嘢入去，佢都會幫你記底。</li>
-    </ul>
+    <div class="step-box">
+        <h2>第一章：你不需要成為技術專家</h2>
+        <p>好多同事見到「AI」就會覺得要寫 code 或者入後台 Dashboard。喺 OpenClaw 嘅設計入面：</p>
+        <ul>
+            <li><strong>秘書/使用者：</strong> 只需停留在 <strong>Telegram</strong> 介面。</li>
+            <li><strong>技術人員：</strong> 負責後台維護。</li>
+        </ul>
+        <p>你只需要好似平時吩咐同事咁，直接喺 Telegram 同「龍蝦」講嘢就得。</p>
+    </div>
 
-    <h2>第二章：實戰指令示範</h2>
-    <p>記住一個原則：<strong>「好似交帶真人做嘢咁，講清楚時間、人物、地點。」</strong></p>
+    <h2>第二章：實戰溝通 —— 點樣落指令？</h2>
+    <p>指令嘅核心原則係：<strong>「具體、有時間、有目標」</strong>。初期如果佢唔明，唔使氣餒，試吓換個講法，佢會慢慢記住你嘅口吻。</p>
 
     <div class="telegram-bubble">
-        <strong>🙋 秘書：</strong><br>
-        「龍蝦，幫我記住聽朝 10 點老闆要同 同事 開會，討論出糧表。」
+        <strong>🙋 你：</strong><br>
+        「龍蝦，幫我記住聽朝 10 點老闆要開會，討論出糧表。到時提我準備份文件。」
     </div>
     <div class="bot-bubble">
         <strong>🦞 龍蝦：</strong><br>
-        「收到！已經記低咗。我聽朝 9 點 45 分會喺 Telegram 提醒你準備份 Sheet。」
+        「收到！已經入咗排程。我聽朝 9 點 45 分會喺 Telegram 傳訊息提醒你。」
     </div>
 
     <div class="telegram-bubble">
-        <strong>🙋 秘書：</strong><br>
-        「龍蝦，呢份係今日嘅電費收據 [射張相俾龍蝦]。」
+        <strong>🙋 你：</strong><br>
+        「幫我睇吓呢條連結入面講乜：[發送網址]」
     </div>
     <div class="bot-bubble">
         <strong>🦞 龍蝦：</strong><br>
-        「收到收據相片！我已經將佢歸類入『2月賬單』，遲啲幫你對埋數。」
+        「睇完喇！呢篇文主要係講緊 3 月份嘅新行政規例，重點包括...（摘要）」
     </div>
 
-    <h2>第三章：龍蝦會點樣幫你？</h2>
+    <h2>第三章：詳細 Q&A（常見問題解答）</h2>
     <div class="step-box">
-        <p><strong>1. 自動提醒：</strong> 到咗出糧日（26 號）或者 Deadline 前夕，龍蝦會主動喺 Telegram 出聲「啄」你。</p>
-        <p><strong>2. 資訊分類：</strong> 你射條網址或者張相俾佢，佢會自動幫你執好，唔使你再手動 Copy & Paste。</p>
-        <p><strong>3. 每日預報：</strong> 每晚或者每朝，佢會話你聽今日有乜嘢大件事要處理。</p>
+        <div class="qna-item">
+            <span class="question">Q: 龍蝦突然唔睬我點算？</span>
+            <span class="answer">A: AI 有時都會「斷線」或者需要休息。如果佢超過一分鐘冇反應，你可以喺群組入面嗌吓佢個名，或者再講多次指令。如果持續冇反應，就通知技術同事檢查後台。</span>
+        </div>
+
+        <div class="qna-item">
+            <span class="question">Q: 佢會唔會洩漏我嘅秘密？</span>
+            <span class="answer">A: 龍蝦係根據你嘅設定運作嘅。為咗安全，<strong>極度私人嘅資料（如密碼）請只喺你同龍蝦嘅「私密對話（Direct Chat）」入面講</strong>，唔好喺大群組度講。</span>
+        </div>
+
+        <div class="qna-item">
+            <span class="question">Q: 點解佢有時會答非所問？</span>
+            <span class="answer">A: 呢個係學習過程嘅一部分。可能係指令太模糊（例如：「幫我搞吓啲嘢」）。試吓講得具體啲（例如：「幫我將張相 save 入 2 月資料夾」），佢會愈做愈準。</span>
+        </div>
+
+        <div class="qna-item">
+            <span class="question">Q: 我可以叫佢幫我寫 Email 嗎？</span>
+            <span class="answer">A: 當然可以！你可以話：「幫我草擬一封 Email 給客戶，內容係關於改期開會。」佢會寫好初稿俾你喺 Telegram 檢查。</span>
+        </div>
+
+        <div class="qna-item">
+            <span class="question">Q: 佢記唔記得我尋日講過嘅嘢？</span>
+            <span class="answer">A: 如果你吩咐佢「記住呢件事」，佢就會寫入佢嘅長期記憶入面。如果只係普通閒聊，佢可能過咗一陣就會唔記得，所以重要嘢記得要佢「記低」。</span>
+        </div>
     </div>
 
-    <h2>第四章：常見問題 (Q&A)</h2>
-    <p><strong>Q: 我使唔使入後台 Dashboard？</strong><br>
-    A: 絕對唔使。所有操作都可以喺 Telegram 完成，後台嘅嘢交俾技術人員就得。</p>
-
-    <p><strong>Q: 龍蝦唔理我點算？</strong><br>
-    A: 如果佢超過一分鐘冇反應，可以試吓喺 Group 嗌佢個名，或者再講多次個指令。</p>
-
-    <div class="warning">
-        <strong>⚠️ 安全提醒：</strong> 龍蝦會記住你講過嘅嘢，所以重要嘅密碼同私人資料，請只喺「個人頻道」同佢講。
+    <h2>第四章：共同成長的學習曲線</h2>
+    <div class="quote">
+        「第一日用，龍蝦可能只係一個普通助手；一個月後，佢會成為最了解你工作習慣嘅影子。」
     </div>
+    <p>唔好怕同佢溝通，試吓俾唔同嘅任務佢，例如分類檔案、摘要長文章、甚至係幫你記低生活瑣事。OpenClaw 嘅目標係將你從重複性嘅工作中解放出嚟。</p>
 
     <div class="footer">
-        由 OpenClaw 系統自動生成 | 專業秘書智能助理
+        由 OpenClaw 系統自動生成 | 專業秘書智能助理學習手冊
     </div>
 </body>
 </html>
