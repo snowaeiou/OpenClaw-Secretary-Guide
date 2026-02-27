@@ -3,104 +3,75 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>OpenClaw 秘書實戰手冊</title>
+    <title>OpenClaw 秘書專用：Telegram 智能助理操作手冊</title>
     <style>
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px; }
-        h1 { color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; }
-        h2 { color: #1976d2; margin-top: 30px; border-left: 5px solid #1976d2; padding-left: 15px; }
-        .intro { background: #f5f5f5; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-        .step { margin-bottom: 20px; }
-        .step-number { font-weight: bold; color: #d32f2f; font-size: 1.2em; }
-        .image-box { border: 1px solid #ddd; padding: 10px; margin: 20px 0; text-align: center; background: #fff; }
-        .image-box img { max-width: 100%; height: auto; border-radius: 4px; }
-        .image-label { font-size: 0.9em; color: #666; margin-top: 10px; }
-        .comparison { display: flex; gap: 20px; margin: 20px 0; }
-        .before, .after { flex: 1; padding: 15px; border-radius: 8px; }
-        .before { background: #ffebee; border: 1px solid #ffcdd2; }
-        .after { background: #e8f5e9; border: 1px solid #c8e6c9; }
-        .prompt-tips { background: #e3f2fd; padding: 15px; border-radius: 8px; border-left: 5px solid #2196f3; }
+        h1 { color: #0088cc; border-bottom: 2px solid #0088cc; padding-bottom: 10px; }
+        h2 { color: #2c3e50; margin-top: 30px; border-left: 5px solid #0088cc; padding-left: 15px; }
+        .telegram-bubble { background: #e1f5fe; padding: 15px; border-radius: 15px; margin: 10px 0; border: 1px solid #b3e5fc; }
+        .bot-bubble { background: #f1f8e9; padding: 15px; border-radius: 15px; margin: 10px 0; border: 1px solid #dcedc8; }
+        .warning { background: #fff3e0; padding: 15px; border-radius: 8px; border-left: 5px solid #ff9800; color: #e65100; }
+        .step-box { background: #fafafa; padding: 20px; border-radius: 8px; border: 1px solid #eee; margin: 20px 0; }
         .footer { margin-top: 50px; font-size: 0.8em; color: #999; text-align: center; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background-color: #f2f2f2; }
     </style>
 </head>
 <body>
-    <h1>OpenClaw 秘書實戰手冊</h1>
-    <p><strong>主題：</strong> 將 AI 龍蝦變成你的最強分身</p>
-    <p><strong>版本：</strong> 1.0 (2026年2月)</p>
+    <h1>OpenClaw 秘書專用手冊</h1>
+    <p><strong>主題：</strong> 透過 Telegram 輕鬆駕馭你的 AI 助理（龍蝦）</p>
 
-    <div class="intro">
-        <p>作為一名專業秘書，你嘅時間係用嚟做決策同溝通，而唔係處理煩瑣嘅數據搬運。OpenClaw（我哋叫佢做「龍蝦」）就係你嘅 24 小時數碼分身，幫你執行所有枯燥但重要嘅任務。</p>
+    <div class="step-box">
+        <p>歡迎！呢份手冊係專門為秘書同事而設。你唔需要識任何程式碼，亦唔需要入後台。你只需要好似平時同朋友傾偈咁，喺 Telegram 吩咐「龍蝦」就得。</p>
     </div>
 
-    <h2>第一章：馴服龍蝦的第一步（基礎設定）</h2>
-    <div class="step">
-        <p><span class="step-number">1. 身份訓練：</span> 話俾龍蝦聽你係邊個。喺 <code>USER.md</code> 入面寫低你嘅習慣、邊個係你老闆、你鍾意點樣排版。</p>
-        <p><span class="step-number">2. 角色分工：</span> 透過 Dashboard 監控唔同嘅 Agent。你可以有一個 Agent 專門搞 Payroll，一個專門搞 Coding。</p>
+    <h2>第一章：點樣開始同「龍蝦」傾偈？</h2>
+    <p>龍蝦就係你 Telegram 入面嘅其中一個聯絡人。佢會喺唔同嘅群組幫你手：</p>
+    <ul>
+        <li><strong>個人對話：</strong> 你同龍蝦嘅私密空間，用嚟做最後確認同埋聽取聽日嘅行程預報。</li>
+        <li><strong>工作群組 (例如 NALA)：</strong> 龍蝦會喺度睇住啲行政 Deadline。</li>
+        <li><strong>記事群組 (例如 記事簿)：</strong> 你射任何嘢入去，佢都會幫你記底。</li>
+    </ul>
+
+    <h2>第二章：實戰指令示範</h2>
+    <p>記住一個原則：<strong>「好似交帶真人做嘢咁，講清楚時間、人物、地點。」</strong></p>
+
+    <div class="telegram-bubble">
+        <strong>🙋 秘書：</strong><br>
+        「龍蝦，幫我記住聽朝 10 點老闆要同 Johnny 開會，討論出糧表。」
+    </div>
+    <div class="bot-bubble">
+        <strong>🦞 龍蝦：</strong><br>
+        「收到！已經記低咗。我聽朝 9 點 45 分會喺 Telegram 提醒你準備份 Sheet。」
     </div>
 
-    <div class="image-box">
-        <img src="media/dashboard.jpg" alt="OpenClaw Dashboard">
-        <div class="image-label">圖 1：OpenClaw Gateway Dashboard - 喺呢度你可以睇到有幾多個「分身」正在幫你開工。</div>
+    <div class="telegram-bubble">
+        <strong>🙋 秘書：</strong><br>
+        「龍蝦，呢份係今日嘅電費收據 [射張相俾龍蝦]。」
+    </div>
+    <div class="bot-bubble">
+        <strong>🦞 龍蝦：</strong><br>
+        「收到收據相片！我已經將佢歸類入『2月賬單』，遲啲幫你對埋數。」
     </div>
 
-    <h2>第二章：實戰場景 —— 龍蝦可以幫你做乜？</h2>
-    <table>
-        <tr>
-            <th>場景</th>
-            <th>龍蝦嘅動作</th>
-            <th>秘書省下嘅時間</th>
-        </tr>
-        <tr>
-            <td>Email 分類</td>
-            <td>自動將 HSBC / PayMe 通知搬入特定 Label</td>
-            <td>每日 15 分鐘</td>
-        </tr>
-        <tr>
-            <td>出糧提醒</td>
-            <td>根據日期自動喺 Telegram 追你交出糧表</td>
-            <td>避免忘記 Deadline 嘅壓力</td>
-        </tr>
-        <tr>
-            <td>資料提取</td>
-            <td>從 Email 抽數據寫入 Google Sheets</td>
-            <td>大幅減少手動輸入錯誤</td>
-        </tr>
-    </table>
-
-    <div class="image-box">
-        <img src="media/telegram.jpg" alt="Telegram Groups">
-        <div class="image-label">圖 2：多群組協作 - 龍蝦可以同時喺 NALA、Notion 同私人頻道幫你記嘢。</div>
+    <h2>第三章：龍蝦會點樣幫你？</h2>
+    <div class="step-box">
+        <p><strong>1. 自動提醒：</strong> 到咗出糧日（26 號）或者 Deadline 前夕，龍蝦會主動喺 Telegram 出聲「啄」你。</p>
+        <p><strong>2. 資訊分類：</strong> 你射條網址或者張相俾佢，佢會自動幫你執好，唔使你再手動 Copy & Paste。</p>
+        <p><strong>3. 每日預報：</strong> 每晚或者每朝，佢會話你聽今日有乜嘢大件事要處理。</p>
     </div>
 
-    <h2>第三章：點樣落指令（Prompting 技巧）</h2>
-    <div class="prompt-tips">
-        <strong>龍蝦原則：</strong> 指令愈具體，結果愈完美。
-    </div>
+    <h2>第四章：常見問題 (Q&A)</h2>
+    <p><strong>Q: 我使唔使入後台 Dashboard？</strong><br>
+    A: 絕對唔使。所有操作都可以喺 Telegram 完成，後台嘅嘢交俾技術人員就得。</p>
 
-    <div class="comparison">
-        <div class="before">
-            <strong>❌ 錯誤示範 (Before)</strong><br>
-            「幫我執下啲 Email。」<br><br>
-            <em>結果：龍蝦唔知由邊度執起，可能會問返你轉頭。</em>
-        </div>
-        <div class="after">
-            <strong>✅ 專業指令 (After)</strong><br>
-            「幫我搵返過去 7 日所有嚟自 Apple 嘅收據，將標題同金額列個表俾我。」<br><br>
-            <em>結果：龍蝦即刻列出清單，甚至可以問你要唔要整成 PDF。</em>
-        </div>
-    </div>
+    <p><strong>Q: 龍蝦唔理我點算？</strong><br>
+    A: 如果佢超過一分鐘冇反應，可以試吓喺 Group 嗌佢個名，或者再講多次個指令。</p>
 
-    <h2>第四章：常見問題 Q&A</h2>
-    <p><strong>Q: 點解龍蝦好似唔記得咗我之前講過嘅嘢？</strong><br>
-    A: 龍蝦每個對話（Session）都係新嘅。如果重要嘅嘢，請叫佢「記落 MEMORY.md 度」，咁佢下次開工就會讀返出嚟。</p>
-    
-    <p><strong>Q: 指令出咗 Error 點算？</strong><br>
-    A: 唔使驚，通常係 Token 用完或者 API 暫時斷線。你可以叫佢「再試一次」或者「檢查下個 config」。</p>
+    <div class="warning">
+        <strong>⚠️ 安全提醒：</strong> 龍蝦會記住你講過嘅嘢，所以重要嘅密碼同私人資料，請只喺「個人頻道」同佢講。
+    </div>
 
     <div class="footer">
-        由 李承貴 (AI Assistant) 製作 | 基於 OpenClaw 系統
+        由 OpenClaw 系統自動生成 | 專業秘書智能助理
     </div>
 </body>
 </html>
