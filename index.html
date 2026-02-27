@@ -19,6 +19,8 @@
         .term-list { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .term-card { background: #fff; padding: 15px; border-radius: 8px; border: 1px solid #eee; }
         .term-name { font-weight: bold; color: #0088cc; display: block; margin-bottom: 5px; }
+        .cheat-sheet { background: #e8eaf6; padding: 20px; border-radius: 10px; border: 1px solid #c5cae9; }
+        .template-card { background: #fff; padding: 10px 15px; margin-bottom: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-family: monospace; color: #3949ab; }
         .footer { margin-top: 60px; font-size: 0.9em; color: #aaa; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
@@ -53,15 +55,6 @@
         「收到！已經入咗排程。我聽朝 9 點 45 分會喺 Telegram 傳訊息提醒你。」
     </div>
 
-    <div class="telegram-bubble">
-        <strong>🙋 你：</strong><br>
-        「幫我睇吓呢條連結入面講乜：[發送網址]」
-    </div>
-    <div class="bot-bubble">
-        <strong>🦞 龍蝦：</strong><br>
-        「睇完喇！呢篇文主要係講緊 3 月份嘅新行政規例，重點包括...（摘要）」
-    </div>
-
     <h2>第三章：詳細 Q&A（常見問題解答）</h2>
     <div class="step-box">
         <div class="qna-item">
@@ -70,18 +63,8 @@
         </div>
 
         <div class="qna-item">
-            <span class="question">Q: 佢會唔會洩漏我嘅秘密？</span>
-            <span class="answer">A: 龍蝦係根據你嘅設定運作嘅。為咗安全，<strong>極度私人嘅資料（如密碼）請只喺你同龍蝦嘅「私密對話（Direct Chat）」入面講</strong>，唔好喺大群組度講。</span>
-        </div>
-
-        <div class="qna-item">
             <span class="question">Q: 點解佢有時會答非所問？</span>
             <span class="answer">A: 呢個係學習過程嘅一部分。可能係指令太模糊（例如：「幫我搞吓啲嘢」）。試吓講得具體啲（例如：「幫我將張相 save 入 2 月資料夾」），佢會愈做愈準。</span>
-        </div>
-
-        <div class="qna-item">
-            <span class="question">Q: 我可以叫佢幫我寫 Email 嗎？</span>
-            <span class="answer">A: 當然可以！你可以話：「幫我草擬一封 Email 給客戶，內容係關於改期開會。」佢會寫好初稿俾你喺 Telegram 檢查。</span>
         </div>
 
         <div class="qna-item">
@@ -90,7 +73,32 @@
         </div>
     </div>
 
-    <h2>第四章：龍蝦小辭典（常用術語）</h2>
+    <h2>第四章：秘書專用：萬用指令句式 (Cheat Sheet)</h2>
+    <div class="cheat-sheet">
+        <p>初期唔知點同龍蝦講嘢？試吓直接套用呢啲「填色比賽」句式：</p>
+        
+        <strong>📌 提醒與記性：</strong>
+        <div class="template-card">
+            「龍蝦，幫我記住 [時間] [人物] 要 [做咩]，並喺 [幾時] 提我。」
+        </div>
+
+        <strong>📌 搵料與整理：</strong>
+        <div class="template-card">
+            「幫我上網搵吓 [主題] 嘅資料，同我總結成 3 個重點。」
+        </div>
+
+        <strong>📌 文書與草擬：</strong>
+        <div class="template-card">
+            「幫我寫封 Email 給 [邊個]，內容關於 [主題]，口吻要 [專業/客氣]。」
+        </div>
+
+        <strong>📌 檔案與圖片：</strong>
+        <div class="template-card">
+            「幫我將呢張 [相片/收據] save 低，並標記為 [2月行政開支]。」
+        </div>
+    </div>
+
+    <h2>第五章：龍蝦小辭典（常用術語）</h2>
     <div class="term-list">
         <div class="term-card">
             <span class="term-name">指令 (Prompt)</span>
@@ -98,31 +106,23 @@
         </div>
         <div class="term-card">
             <span class="term-name">記憶 (Memory)</span>
-            <p>龍蝦存放重要資料嘅地方。你可以叫佢「將呢件事記落長期記憶」，佢下次開工就會讀返出嚟。</p>
+            <p>龍蝦存放重要資料嘅「長遠記事簿」。你可以叫佢「記低呢件事」。</p>
         </div>
         <div class="term-card">
             <span class="term-name">會話 (Session)</span>
-            <p>你同龍蝦每一次連續嘅對話。通常龍蝦開新會話嗰陣，會先睇返你之前嘅記憶文件。</p>
+            <p>你同龍蝦每一次連續嘅對話。龍蝦開新會話嗰陣會先讀返你嘅記憶。</p>
         </div>
         <div class="term-card">
             <span class="term-name">技能 (Skills)</span>
-            <p>龍蝦識做嘅特殊功能，例如：搵天氣、讀 Google Calendar、寫 Email 等。</p>
-        </div>
-        <div class="term-card">
-            <span class="term-name">工作空間 (Workspace)</span>
-            <p>龍蝦幫你儲存文件（好似 USER.md 或者記錄檔）嘅數碼資料夾。</p>
-        </div>
-        <div class="term-card">
-            <span class="term-name">標籤 (Label)</span>
-            <p>用嚟分類 Email 或者文件嘅標籤（Folder），等龍蝦可以自動幫你執好啲嘢。</p>
+            <p>龍蝦識做嘅功能，例如：搵天氣、寫 Email、整理文件等。</p>
         </div>
     </div>
 
-    <h2>第五章：共同成長的學習曲線</h2>
+    <h2>第六章：共同成長的學習曲線</h2>
     <div class="quote">
         「第一日用，龍蝦可能只係一個普通助手；一個月後，佢會成為最了解你工作習慣嘅影子。」
     </div>
-    <p>唔好怕同佢溝通，試吓俾唔同嘅任務佢，例如分類檔案、摘要長文章、甚至係幫你記低生活瑣事。OpenClaw 嘅目標係將你從重複性嘅工作中解放出嚟。</p>
+    <p>唔好怕同佢溝通，試吓俾唔同嘅任務佢。OpenClaw 嘅目標係將你從重複性嘅工作中解放出嚟。</p>
 
     <div class="footer">
         由 OpenClaw 系統自動生成 | 專業秘書智能助理學習手冊
